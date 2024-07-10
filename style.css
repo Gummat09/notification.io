@@ -1,0 +1,71 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    position: relative;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.message-box {
+    width: 250px;
+    background-color: #fff;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border-radius: 16px;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    text-align: center;
+    line-height: 24px;
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+
+.push {
+    position: absolute;
+    bottom: 30%;
+    right: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.chat {
+    padding: 8px 16px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#btn:active,
+#btn:hover {
+    border: none;
+    outline: none;
+    transform: scale(1.115);
+}
